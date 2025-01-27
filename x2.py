@@ -23,7 +23,7 @@ def build_model():
     return model
 
 def train_model(model, x1, x2):
-    history = model.fit(x1, x2, epochs=2000, verbose=True) # epochs son los ciclos de entrenamiento cuantos vas sera mas preciso pero mas lento Y verbose es para que muestre el proceso
+    history = model.fit(x1, x2, epochs=1000, verbose=True) # epochs son los ciclos de entrenamiento cuantos vas sera mas preciso pero mas lento Y verbose es para que muestre el proceso
     return history
 
 def predict(model, value):

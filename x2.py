@@ -23,7 +23,7 @@ def build_model():
     return model
 
 def train_model(model, x1, x2):
-    history = model.fit(x1, x2, epochs=1000, verbose=False)
+    history = model.fit(x1, x2, epochs=2000, verbose=True) # epochs son los ciclos de entrenamiento cuantos vas sera mas preciso pero mas lento
     return history
 
 def predict(model, value):
@@ -41,4 +41,4 @@ def main(x):
     print(predicted)
 
 if __name__ == "__main__":
-    main(14)
+    main(9)
